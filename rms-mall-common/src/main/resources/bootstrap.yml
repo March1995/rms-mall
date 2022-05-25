@@ -1,0 +1,27 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yml
+        sharedConfigs:
+          - data-id: common.yml
+            group: DEFAULT_GROUP
+            refresh: true
+          - data-id: common2.yml
+            group: DEFAULT_GROUP
+            refresh: true
+        refresh-enabled: true
+        extensionConfigs:
+          - data-id: common3.yml
+            group: DEFAULT_GROUP
+            refresh: true
+          - data-id: common4.yml
+            group: DEFAULT_GROUP
+            refresh: true
+      discovery:
+        server-addr: localhost:8848
+  application:
+    name: rms-mall-common
+  profiles:
+    active: dev
