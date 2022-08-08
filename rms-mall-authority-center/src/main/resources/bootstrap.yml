@@ -1,0 +1,36 @@
+server:
+  port: 7000
+  servlet:
+    context-path: /rms-mall-authority-center
+
+spring:
+  application:
+    name: rms-mall-authority-center
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace:
+        file-extension: yml
+        shared-configs:
+          - dataId: db.yml
+            group: e-commerce
+            refresh: true
+      discovery:
+        enabled: true # 如果不想使用 Nacos 进行服务注册和发现, 设置为 false 即可
+        server-addr: 127.0.0.1:8848 # Nacos 服务器地址
+        # server-addr: 127.0.0.1:8848,127.0.0.1:8849,127.0.0.1:8850 # Nacos 服务器地址
+        namespace:
+        metadata:
+          management:
+            context-path: ${server.servlet.context-path}/actuator
+
+# 暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

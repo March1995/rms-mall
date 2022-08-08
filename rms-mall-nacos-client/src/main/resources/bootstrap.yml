@@ -1,4 +1,9 @@
+server:
+  port: 8000
 spring:
+  application:
+    name: rms-mall-nacos-client
+
   cloud:
     nacos:
       config:
@@ -21,7 +26,6 @@ spring:
             refresh: true
       discovery:
         server-addr: localhost:8848
-  application:
-    name: rms-mall-common
+
   profiles:
     active: dev

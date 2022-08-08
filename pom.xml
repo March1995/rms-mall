@@ -25,7 +25,23 @@
   <modules>
     <module>rms-mall-common</module>
     <module>rms-mall-goods</module>
+    <module>rms-mall-authority-center</module>
+    <module>rms-mall-mvc-config</module>
+    <module>rms-mall-nacos-client</module>
   </modules>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <optional>true</optional>
+    </dependency>
+
+  </dependencies>
 
   <dependencyManagement>
     <dependencies>
