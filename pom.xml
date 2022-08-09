@@ -28,6 +28,7 @@
     <module>rms-mall-authority-center</module>
     <module>rms-mall-mvc-config</module>
     <module>rms-mall-nacos-client</module>
+    <module>rms-mall-admin</module>
   </modules>
 
   <dependencies>
@@ -45,6 +46,14 @@
 
   <dependencyManagement>
     <dependencies>
+
+      <dependency>
+        <groupId>com.wyb.rms</groupId>
+        <artifactId>rms-mall-mvc-config</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+      </dependency>
+
+
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>

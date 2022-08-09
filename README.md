@@ -7,7 +7,6 @@ rms-mall(real-micro-services-mall) 真微服务商城，由于本人从网上找
 |   模块   |   功能  |  	端口    |
 | ---- | ---- | ---- |
 |   rms-mall-gateway   |   网关   |      |
-|   rms-mall-gateway   |   网关   |      |
 |   rms-mall-authority-center   |   授权中心   |      |
 |   rms-mall-goods   |   商品服务   |      |
 |   rms-mall-order   |   订单服务   |      |
@@ -27,3 +26,5 @@ rms-mall(real-micro-services-mall) 真微服务商城，由于本人从网上找
 ## 更新
 
 - 2022/1/20 增加nacos
+- 2022/8/7 增加common模块 mvc-config模块
+- 2022/8/8 增加nacos-client模块 admin模块
