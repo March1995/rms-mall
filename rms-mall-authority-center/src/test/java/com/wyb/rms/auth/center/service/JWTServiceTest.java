@@ -1,8 +1,8 @@
 package com.wyb.rms.auth.center.service;
 
 import com.alibaba.fastjson.JSON;
-import com.wyb.rms.auth.center.common.util.TokenParseUtil;
-import com.wyb.rms.auth.center.common.vo.LoginUserInfo;
+import com.wyb.rms.common.util.TokenParseUtil;
+import com.wyb.rms.common.vo.LoginUserInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

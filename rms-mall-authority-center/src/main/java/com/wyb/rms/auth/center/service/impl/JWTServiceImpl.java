@@ -1,9 +1,9 @@
 package com.wyb.rms.auth.center.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.wyb.rms.auth.center.common.constant.CommonConstant;
-import com.wyb.rms.auth.center.common.vo.LoginUserInfo;
-import com.wyb.rms.auth.center.common.vo.UsernameAndPassword;
+import com.wyb.rms.common.constant.CommonConstant;
+import com.wyb.rms.common.vo.LoginUserInfo;
+import com.wyb.rms.common.vo.UsernameAndPassword;
 import com.wyb.rms.auth.center.constant.AuthorityConstant;
 import com.wyb.rms.auth.center.dao.UserDao;
 import com.wyb.rms.auth.center.entity.UserDO;

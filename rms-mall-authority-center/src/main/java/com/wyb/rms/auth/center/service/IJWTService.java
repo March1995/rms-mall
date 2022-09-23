@@ -1,7 +1,7 @@
 package com.wyb.rms.auth.center.service;
 
 
-import com.wyb.rms.auth.center.common.vo.UsernameAndPassword;
+import com.wyb.rms.common.vo.UsernameAndPassword;
 
 /**
  * <h1>JWT 相关服务接口定义</h1>
