@@ -6,11 +6,11 @@ import com.wyb.rms.common.vo.LoginUserInfo;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
-import sun.misc.BASE64Decoder;
 
 import java.security.KeyFactory;
 import java.security.PublicKey;
 import java.security.spec.X509EncodedKeySpec;
+import java.util.Base64;
 import java.util.Calendar;
 
 /**
@@ -56,7 +56,7 @@ public class TokenParseUtil {
     private static PublicKey getPublicKey() throws Exception {
 
         X509EncodedKeySpec keySpec = new X509EncodedKeySpec(
-                new BASE64Decoder().decodeBuffer(CommonConstant.PUBLIC_KEY)
+                Base64.getDecoder().decode(CommonConstant.PUBLIC_KEY)
         );
         return KeyFactory.getInstance("RSA").generatePublic(keySpec);
     }
