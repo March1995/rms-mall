@@ -1,12 +1,12 @@
 package com.wyb.rms.gateway.filter;
 
 import com.alibaba.fastjson.JSON;
-import com.imooc.ecommerce.constant.CommonConstant;
-import com.imooc.ecommerce.constant.GatewayConstant;
-import com.imooc.ecommerce.util.TokenParseUtil;
-import com.imooc.ecommerce.vo.JwtToken;
-import com.imooc.ecommerce.vo.LoginUserInfo;
-import com.imooc.ecommerce.vo.UsernameAndPassword;
+import com.wyb.rms.common.constant.CommonConstant;
+import com.wyb.rms.common.util.TokenParseUtil;
+import com.wyb.rms.common.vo.JwtToken;
+import com.wyb.rms.common.vo.LoginUserInfo;
+import com.wyb.rms.common.vo.UsernameAndPassword;
+import com.wyb.rms.gateway.constant.GatewayConstant;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
@@ -33,7 +33,7 @@ import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * <h1>全局登录鉴权过滤器</h1>
- * */
+ */
 @Slf4j
 @Component
 public class GlobalLoginOrRegisterFilter implements GlobalFilter, Ordered {
@@ -52,7 +52,7 @@ public class GlobalLoginOrRegisterFilter implements GlobalFilter, Ordered {
      * <h2>登录、注册、鉴权</h2>
      * 1. 如果是登录或注册, 则去授权中心拿到 Token 并返回给客户端
      * 2. 如果是访问其他的服务, 则鉴权, 没有权限返回 401
-     * */
+     */
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
 
@@ -117,7 +117,7 @@ public class GlobalLoginOrRegisterFilter implements GlobalFilter, Ordered {
 
     /**
      * <h2>从授权中心获取 Token</h2>
-     * */
+     */
     private String getTokenFromAuthorityCenter(ServerHttpRequest request, String uriFormat) {
 
         // service id 就是服务名字, 负载均衡
@@ -154,7 +154,7 @@ public class GlobalLoginOrRegisterFilter implements GlobalFilter, Ordered {
 
     /**
      * <h2>从 Post 请求中获取到请求数据</h2>
-     * */
+     */
     private String parseBodyFromRequest(ServerHttpRequest request) {
 
         // 获取请求体
