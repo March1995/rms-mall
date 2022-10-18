@@ -26,7 +26,7 @@ public class UserTest {
     public void createUserRecord() {
 
         UserDO userDO = new UserDO();
-        userDO.setUsername("ImoocQinyi@imooc.com");
+        userDO.setUsername("wangyb@qq.com");
         userDO.setPassword(MD5.create().digestHex("12345678"));
         userDO.setExtraInfo("{}");
         log.info("save user: [{}]",

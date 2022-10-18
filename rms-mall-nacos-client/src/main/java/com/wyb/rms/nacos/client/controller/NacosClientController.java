@@ -33,6 +33,16 @@ public class NacosClientController {
     }
 
     /**
+     * <h2>根据 service id 获取服务所有的实例信息</h2>
+     * */
+    @GetMapping("/service-instance")
+    public List<ServiceInstance> logNacosClientInfo(
+            @RequestParam(defaultValue = "rms-mall-nacos-client") String serviceId) {
+
+        log.info("coming in log nacos client info: [{}]", serviceId);
+        return nacosClientService.getNacosClientInfo(serviceId);
+    }
+    /**
      * 动态获取配置文件
      */
     @GetMapping("/getConfig")
