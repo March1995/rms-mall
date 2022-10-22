@@ -1,5 +1,5 @@
 project:
-  name: e-commerce-springcloud
-  org: imooc.com
+  name: rms-mall
+  org: com.wyb
   version: 1.0
-  author: imooc-qinyi
+  author: marcher
