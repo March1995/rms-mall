@@ -30,6 +30,7 @@
     <module>rms-mall-nacos-client</module>
     <module>rms-mall-admin</module>
     <module>rms-mall-gateway</module>
+    <module>rms-mall-service</module>
   </modules>
 
   <dependencies>
