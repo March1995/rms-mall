@@ -15,6 +15,7 @@
         <module>rms-mall-account-service</module>
         <module>rms-mall-service-config</module>
         <module>rms-mall-service-sdk</module>
+        <module>rms-mall-goods-service</module>
     </modules>
     <packaging>pom</packaging>
 
