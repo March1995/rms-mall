@@ -144,7 +144,7 @@ public class AsyncServiceImpl implements IAsyncService {
 
         // 保存到 Redis 中
         redisTemplate.opsForHash().putAll(
-                GoodsConstant.ECOMMERCE_GOODS_DICT_KEY,
+                GoodsConstant.RMS_GOODS_DICT_KEY,
                 id2JsonObject
         );
     }

@@ -34,7 +34,7 @@ public class AsyncPoolConfig implements AsyncConfigurer {
         executor.setMaxPoolSize(20);
         executor.setQueueCapacity(20);
         executor.setKeepAliveSeconds(60);
-        executor.setThreadNamePrefix("Qinyi-Async-");   // 这个非常重要
+        executor.setThreadNamePrefix("Goods-Async-");   // 这个非常重要
 
         // 等待所有任务结果候再关闭线程池
         executor.setWaitForTasksToCompleteOnShutdown(true);

@@ -6,6 +6,6 @@ package com.wyb.rms.service.goods.constant;
 public class GoodsConstant {
 
     /** redis key */
-    public static final String ECOMMERCE_GOODS_DICT_KEY =
-            "ecommerce:goods:dict:20210101";
+    public static final String RMS_GOODS_DICT_KEY =
+            "rms:goods:dict:20210101";
 }
