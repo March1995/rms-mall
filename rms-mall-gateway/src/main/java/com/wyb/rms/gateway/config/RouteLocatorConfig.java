@@ -20,10 +20,10 @@ public class RouteLocatorConfig {
         // 手动定义 Gateway 路由规则需要指定 id、path 和 uri
         return builder.routes()
                 .route(
-                        "e_commerce_authority",
+                        "rms-mall-authority-center",
                         r -> r.path(
-                                "/imooc/e-commerce/login",
-                                "/imooc/e-commerce/register"
+                                "/rms-mall-gateway/login",
+                                "/rms-mall-gateway/register"
                                 ).uri("http://localhost:9001/")
                 ).build();
     }

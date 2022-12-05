@@ -29,7 +29,7 @@ public class AsyncTaskMonitor {
      * <h2>异步任务执行的环绕切面</h2>
      * 环绕切面让我们可以在方法执行之前和执行之后做一些 "额外" 的操作
      * */
-    @Around("execution(* com.wyb.rms.service.*.async.AsyncServiceImpl.*(..))")
+    @Around("execution(* com.wyb.rms.service.goods.*.async.AsyncServiceImpl.*(..))")
     public Object taskHandle(ProceedingJoinPoint proceedingJoinPoint) {
 
         // 获取 taskId, 调用异步任务传入的第二个参数
