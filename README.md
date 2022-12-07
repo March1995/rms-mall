@@ -62,9 +62,9 @@ rms-mall(real-micro-services-mall) 真微服务商城，由于本人从网上找
 - 商品微服务对外 HTTP 接口
 - 验证商品微服务功能可用性
 
-### 微服务通信 Ribbon+OpenFeign
+### 微服务通信 Ribbon+OpenFeign(完成)
 
-### Hystrix微服务容错
+### Hystrix微服务容错(完成)
 
 ### SpringCloud Stream 消息驱动服务
 
